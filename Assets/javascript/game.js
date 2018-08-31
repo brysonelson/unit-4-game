@@ -120,19 +120,19 @@ $(document).ready(function () {
         $("#selected-char-name").append(userCharName);*/
 
         //Create a new div with the image of your chosen character and their attributes
-        var chosenCharacter = $("<div><img class='w-50 ml-5 pl-5' src='./assets/images/obi-wan.png'></div>");
+        var chosenCharacter = $("<div><img class='w-50 ml-5 pl-5' src='./Assets/images/obi-wan.png'></div>");
         $("#selected-character").append(chosenCharacter);
         $("#selected-char-stats").append(obiHp).append(obiAp);
 
         //create a new div with an image and append it to a row in the enemy area for
         //each of the three remaining characters
-        var enemyDivOne = $("<div class='pl-5'><img id='kylo-img-enemy' class='w-50' src='./assets/images/kylo.png'></div>");
+        var enemyDivOne = $("<div class='pl-5'><img id='kylo-img-enemy' class='w-50' src='./Assets/images/kylo.png'></div>");
         $(".enemy-one").html("<h5 class='text-center m-auto' id='kylo-name-selection'>Kylo Ren</h5>").append(enemyDivOne).append(kyloHp).append(kyloCap);
 
-        var enemyDivTwo = $("<div class='pl-5'><img id='yoda-img-enemy' class='w-50' src='./assets/images/yoda.png'></div>");
+        var enemyDivTwo = $("<div class='pl-5'><img id='yoda-img-enemy' class='w-50' src='./Assets/images/yoda.png'></div>");
         $(".enemy-two").html("<h5 class='text-center m-auto' id='yoda-name-selection'>Yoda</h5>").append(enemyDivTwo).append(yodaHp).append(yodaCap);
 
-        var enemyDivThree = $("<div class='pl-5'><img id='vader-img-enemy' class='w-50' src='./assets/images/vader.png'></div>");
+        var enemyDivThree = $("<div class='pl-5'><img id='vader-img-enemy' class='w-50' src='./Assets/images/vader.png'></div>");
         $(".enemy-three").html("<h5 class='text-center m-auto' id='vader-name-selection'>Darth Vader</h5>").append(enemyDivThree).append(darthHp).append(darthCap);
     
     })
@@ -150,19 +150,19 @@ $(document).ready(function () {
         window.usersCharacter = kyloCharacter;
 
         //Create a new div with the image of your chosen character
-        var chosenCharacter = $("<div><img class='w-50 ml-5' src='./assets/images/kylo.png'></div>");
+        var chosenCharacter = $("<div><img class='w-50 ml-5' src='./Assets/images/kylo.png'></div>");
         $("#selected-character").append(chosenCharacter);
         $("#selected-char-stats").append(kyloHp).append(kyloAp);
 
         //create a new div with an image and append it to a row in the enemy area for
         //each of the three remaining characters
-        var enemyDivOne = $("<div class='pl-5'><img id='obi-wan-img-enemy' class='w-50' src='./assets/images/obi-wan.png'></div>");
+        var enemyDivOne = $("<div class='pl-5'><img id='obi-wan-img-enemy' class='w-50' src='./Assets/images/obi-wan.png'></div>");
         $(".enemy-one").html("<h5 class='text-center m-auto' id='obi-wan-name-selection'>Obi-Wan</h5>").append(enemyDivOne).append(obiHp).append(obiCap);
 
-        var enemyDivTwo = $("<div class='pl-5'><img id='yoda-img-enemy' class='w-50' src='./assets/images/yoda.png'></div>");
+        var enemyDivTwo = $("<div class='pl-5'><img id='yoda-img-enemy' class='w-50' src='./Assets/images/yoda.png'></div>");
         $(".enemy-two").html("<h5 class='text-center m-auto' id='yoda-name-selection'>Yoda</h5>").append(enemyDivTwo).append(yodaHp).append(yodaCap);
 
-        var enemyDivThree = $("<div class='pl-5'><img id='vader-img-enemy' class='w-50' src='./assets/images/vader.png'></div>");
+        var enemyDivThree = $("<div class='pl-5'><img id='vader-img-enemy' class='w-50' src='./Assets/images/vader.png'></div>");
         $(".enemy-three").html("<h5 class='text-center m-auto' id='vader-name-selection'>Darth Vader</h5>").append(enemyDivThree).append(darthHp).append(darthCap);
     })
 
@@ -180,20 +180,20 @@ $(document).ready(function () {
         window.usersCharacter = yodaCharacter;
 
         //Create a new div with the image of your chosen character
-        var chosenCharacter = $("<div><img class='w-50 ml-5 pl-5' src='./assets/images/yoda.png'></div>");
+        var chosenCharacter = $("<div><img class='w-50 ml-5 pl-5' src='./Assets/images/yoda.png'></div>");
         $("#selected-character").append(chosenCharacter);
         $("#selected-char-stats").append(yodaHp).append(yodaAp);
 
         //create a new div with an image and append it to a row in the enemy area for
         //each of the three remaining characters
-        var enemyDivOne = $("<div class='pl-5'><img id='kylo-img-enemy' class='w-50' src='./assets/images/kylo.png'></div>");
+        var enemyDivOne = $("<div class='pl-5'><img id='kylo-img-enemy' class='w-50' src='./Assets/images/kylo.png'></div>");
         $(".enemy-one").html("<h5 class='text-center m-auto' id='kylo-name-selection'>Kylo Ren</h5>").append(enemyDivOne).append(kyloHp).append(kyloCap);
         
 
-        var enemyDivTwo = $("<div class='pl-5'><img id='obi-wan-img-enemy' class='w-50' src='./assets/images/obi-wan.png'></div>");
+        var enemyDivTwo = $("<div class='pl-5'><img id='obi-wan-img-enemy' class='w-50' src='./Assets/images/obi-wan.png'></div>");
         $(".enemy-two").html("<h5 class='text-center m-auto' id='obi-wan-name-selection'>Obi Wan</h5>").append(enemyDivTwo).append(obiHp).append(obiCap);
 
-        var enemyDivThree = $("<div class='pl-5'><img id='vader-img-enemy' class='w-50' src='./assets/images/vader.png'></div>");
+        var enemyDivThree = $("<div class='pl-5'><img id='vader-img-enemy' class='w-50' src='./Assets/images/vader.png'></div>");
         $(".enemy-three").html("<h5 class='text-center m-auto' id='vader-name-selection'>Darth Vader</h5>").append(enemyDivThree).append(darthHp).append(darthCap);
     })
 
@@ -211,20 +211,20 @@ $(document).ready(function () {
         window.usersCharacter = vaderCharacter;
 
         //Create a new div with the image of your chosen character
-        var chosenCharacter = $("<div><img class='w-50 ml-5' src='./assets/images/vader.png'></div>");
+        var chosenCharacter = $("<div><img class='w-50 ml-5' src='./Assets/images/vader.png'></div>");
         $("#selected-character").append(chosenCharacter);
         $("#selected-char-stats").append(darthHp).append(darthAp);
 
         //create a new div with an image and append it to a row in the enemy area for
         //each of the three remaining characters
-        var enemyDivOne = $("<div class='pl-5'><img id='kylo-img-enemy' class='w-50 enemy-select-img' src='./assets/images/kylo.png'></div>");
+        var enemyDivOne = $("<div class='pl-5'><img id='kylo-img-enemy' class='w-50 enemy-select-img' src='./Assets/images/kylo.png'></div>");
         $(".enemy-one").html("<h5 class='text-center m-auto' id='kylo-name-selection'>Kylo Ren</h5>").append(enemyDivOne).append(kyloHp).append(kyloCap);
         $("#character-section").css("display", "none");
 
-        var enemyDivTwo = $("<div class='pl-5'><img id='yoda-img-enemy' class='w-50 enemy-select-img' src='./assets/images/yoda.png'></div>");
+        var enemyDivTwo = $("<div class='pl-5'><img id='yoda-img-enemy' class='w-50 enemy-select-img' src='./Assets/images/yoda.png'></div>");
         $(".enemy-two").html("<h5 class='text-center m-auto' id='yoda-name-selection'>Yoda</h5>").append(enemyDivTwo).append(yodaHp).append(yodaCap);
 
-        var enemyDivThree = $("<div class='pl-5'><img id='obi-wan-img-enemy' class='w-50 enemy-select-img' src='./assets/images/obi-wan.png'></div>");
+        var enemyDivThree = $("<div class='pl-5'><img id='obi-wan-img-enemy' class='w-50 enemy-select-img' src='./Assets/images/obi-wan.png'></div>");
         $(".enemy-three").html("<h5 class='text-center m-auto' id='obi-wan-name-selection'>Obi Wan</h5>").append(enemyDivThree).append(obiHp).append(obiCap);
     })
 
@@ -273,7 +273,7 @@ $(document).ready(function () {
         $("#vader-img-enemy").css("opacity", ".4");
 
         //create a new div for your enemy and insert the image
-        var chosenEnemy = $("<div><img class='w-50 ml-5 pl-5' src='./assets/images/vader.png'></div>");
+        var chosenEnemy = $("<div><img class='w-50 ml-5 pl-5' src='./Assets/images/vader.png'></div>");
         $("#selected-enemy").append(chosenEnemy);
 
     })
@@ -303,7 +303,7 @@ $(document).ready(function () {
         $("#yoda-img-enemy").css("opacity", ".4");
 
         //create a new div for your enemy and insert the image
-        var chosenEnemy = $("<div><img class='w-50 ml-5 pl-5' src='./assets/images/yoda.png'></div>");
+        var chosenEnemy = $("<div><img class='w-50 ml-5 pl-5' src='./Assets/images/yoda.png'></div>");
         $("#selected-enemy").append(chosenEnemy);
 
     })
@@ -332,7 +332,7 @@ $(document).ready(function () {
         $("#kylo-img-enemy").css("opacity", ".4");
 
         //create a new div for your enemy and insert the image
-        var chosenEnemy = $("<div><img class='w-50 ml-5 pl-5' src='./assets/images/kylo.png'></div>");
+        var chosenEnemy = $("<div><img class='w-50 ml-5 pl-5' src='./Assets/images/kylo.png'></div>");
         $("#selected-enemy").append(chosenEnemy);
 
     })
@@ -361,7 +361,7 @@ $(document).ready(function () {
         $("#obi-wan-img-enemy").css("opacity", ".4");
 
         //create a new div for your enemy and insert the image
-        var chosenEnemy = $("<div><img class='w-50 ml-5 pl-5' src='./assets/images/obi-wan.png'></div>");
+        var chosenEnemy = $("<div><img class='w-50 ml-5 pl-5' src='./Assets/images/obi-wan.png'></div>");
         $("#selected-enemy").append(chosenEnemy);
 
     })
