@@ -450,7 +450,7 @@ $(document).ready(function () {
                     winSound.play();
                 }
 
-                setTimeout(restart, 1000 * 19 + 800);
+                setTimeout(restart, 1000 * 9 + 800);
 
                 function restart() {
                     window.location.reload(true);
