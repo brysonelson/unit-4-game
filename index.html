@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--<link rel="stylesheet" type="text/css" href="Assets/css/reset.css">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran|M+PLUS+1p|Muli" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2">
+                    
+                </div>
+                <div class="col-lg-8">
+                    <img id="logo"src="./Assets/images/star-wars-logo.png">
+                </div>
+                <div class="col-lg-2">
+                    <button type="button" class="btn btn-dark btn-sm mt-2" id="reset-btn">Reset</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container" id="main-game">
+
+        <!--Choose Character Here-->
+        <div class="row">
+            <div class="col-lg-12" id="character-section">
+                <h2 class="choose-your-character">Choose Your Character:</h2>
+                <div class="row">
+                    <div class="col-lg-3 character-options" id="obi-img">
+                        <h3 class="text-center">Obi-Wan</h3>
+                        <img id="obi-wan-img" src="Assets/images/obi-wan.png">
+                    </div>
+                    <div class="col-lg-3 character-options" id="kylo-ren-img">
+                        <h3 class="text-center">Kylo Ren</h3>
+                        <img id="kylo-img" src="Assets/images/kylo.png">
+                    </div>
+                    <div class="col-lg-3 character-options" id="yoda-master-img">
+                        <h3 class="text-center">Yoda</h3>
+                        <img id="yoda-img" src="Assets/images/yoda.png">
+                    </div>
+                    <div class="col-lg-3 character-options" id="darth-img">
+                        <h3 class="text-center">Darth Vader</h3>
+                        <img id="vader-img" src="Assets/images/vader.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Chosen Character and Enemy Go Here-->
+        <div class="row selected-characters">
+            <div class="col-lg-6">
+                <div class="row" id="selected-char-name">
+                    <h2 class="m-auto">Your Character</h2>
+                </div> 
+                <div class="row" id="selected-character">
+                    
+                </div>
+                <div class="row" id="selected-char-stats">
+
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row">
+                    <h2 class="m-auto">Defender</h2>
+                </div> 
+                <div class="row" id="selected-enemy">
+                    <img  class="question-img" src="Assets/images/question2.png">
+                </div>
+                <div class="row" id="selected-enemy-stats">
+
+                </div> 
+                
+            </div>
+        </div>
+        
+        <!--Fight section and Hit Points Dealt-->
+        <div class="row" id="fight-section">
+            <div class="col-lg-12" id="fight-section-header">
+                <h2 class="text-center">Attack Your Enemy!</h2>
+            </div>
+            <div class="" id="attack-results-player">
+                </div>
+            <button type="button" class="btn btn-danger btn-lg" id="attack-btn">Attack</button>
+            <div class="" id="attack-results-enemy">
+            </div>
+                
+        </div>
+
+        <!--Choose Enemies Here-->
+        <div class="row" id="choose-enemy">
+            <div class="col-lg-12">
+                <h2 class="text-center">Choose An Enemy:</h2>
+            </div>
+        </div>
+        <div class="row enemies-selection" id="enemies-selection">
+            <!--<div class="col-lg-4 enemy-one-col">-->
+                <span class="enemy-one enemy-options m-auto w-25"></span>
+            <!--</div>-->
+            <!--<div class="col-lg-4 enemy-two-col">-->
+                <span class="enemy-two enemy-options m-auto w-25"></span>
+            <!--</div>-->
+            <!--<div class="col-lg-4 enemy-three-col">-->
+                <span class="enemy-three enemy-options m-auto w-25"></span>
+            <!--</div>-->
+        </div>
+
+   
+    
+        
+
+        <!--Enemies remaining here
+        <div class="row" id="enemies-remaining">
+            <div class="col-lg-12">
+                <h2 class="text-center">Enemies Remaining</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                    
+            </div>
+            <div class="col-lg-2">
+                <span class="enemy-remaining-one enemy-remaining-options"></span>
+            </div>
+            <div class="col-lg-2">
+                <span class="enemy-remaining-two enemy-remaining-options"></span>
+            </div>
+            <div class="col-lg-4">
+                    
+            </div>
+        </div>-->
+            
+            
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!--<script type="text/javascript" src="Assets/javascript/game.js"></script>-->
+    <script type="text/javascript" src="./Assets/javascript/game.js"></script>
+</body>
+</html>
