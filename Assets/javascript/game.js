@@ -65,6 +65,9 @@ $(document).ready(function () {
     var usersCharacter;
     var userEnemy;
     var noEnemyChosen = true;
+
+
+    //audio used in gameplay
     const kyloSound = new Audio("../unit-4-game/Assets/audio/chose-character.mp3");
     const yodaLaugh = new Audio("../unit-4-game/Assets/audio/yoda-laugh.WAV");
     const vaderSound = new Audio("../unit-4-game/Assets/audio/vader-sound.mp3");
@@ -424,6 +427,7 @@ $(document).ready(function () {
 
 
         if (window.userEnemy.hitPoints <= 0) {
+            $("#choose-enemy").css("display", "block");
             $("#selected-enemy").empty();
             $("#selected-enemy-stats").empty();
             $("#attack-results-player").empty();
@@ -433,6 +437,8 @@ $(document).ready(function () {
             enemiesRemaining--;
             if (enemiesRemaining === 0) {
                 //alert("You Win!");
+
+                $("#selected-enemy").empty();
 
                 $("#enemies-selection").css("display", "none");
 
@@ -467,8 +473,12 @@ $(document).ready(function () {
         }
 
         if (window.noEnemyChosen === true) {
+
+            var chooseNextEnemy = $("<div class='w-100 text-center' id='choose-next-enemy'><h3>Choose Your Next Enemy</h3></div>");
             var chooseNewEnemy = $("<img src=../unit-4-game/Assets/images/question2.png id='noEnemySelected'>");
-            $("#selected-enemy").append(chooseNewEnemy);
+            $("#selected-enemy").append(chooseNewEnemy).append(chooseNextEnemy);
+
+            
         }
 
         
