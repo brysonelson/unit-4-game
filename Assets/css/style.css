@@ -149,5 +149,13 @@ h2 {
     position: absolute;
     top:40%;
     font-weight: bolder;
-    color: gold;
+    color: gold ;
   }
+
+  .disabled-enemies {
+    pointer-events: none;
+  }
+
+.disabled-enemies:hover {
+    background: none;
+}
