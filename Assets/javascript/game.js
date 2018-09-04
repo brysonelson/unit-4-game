@@ -11,7 +11,6 @@ $(document).ready(function () {
         attackPower: Math.floor(Math.random() * 20 + 1),
         counterAttackPower: Math.floor(Math.random() * 20 + 1)
     }
-
     //Kylo's Character Attributes
     var kyloAttrib = {
         name: "Kylo Ren",
@@ -76,11 +75,24 @@ $(document).ready(function () {
     const winSound = new Audio("../unit-4-game/Assets/audio/winSound.mov");
     const deadSound = new Audio("../unit-4-game/Assets/audio/scream.wav");
 
-/*=============================================== RESET FUNCTION =================================================*/
+/*=============================================== RESET & INSTRUCTIONS FUNCTION ====================================*/
 
     //reset function
     $("#reset-btn").on("click", function() {
         window.location.reload(true);
+    })
+
+    //Instructions function
+    $("#instructions-btn").on("click", function() {
+        alert(
+            "INSTRUCTIONS:" + "\n"
+            + "STEP 1: Choose your Character to play the game with " + "\n"
+            + "STEP 2: Choose your first Enemy to attack! " + "\n" 
+            + "STEP 3: Attack your first Enemy until their HP runs out " + "\n"
+            + "STEP 4: Choose your next Character, and repeat steps 3 and 4 until no Enemies remain! " + "\n" 
+            + "STEP 5: If you defeat all Enemies before your HP reaches 0, you WIN! " + "\n"
+            + "Once you win, the game will reset automatically after a few seconds"
+        );
     })
 
 
@@ -423,7 +435,7 @@ $(document).ready(function () {
         $("#attack-results-enemy").empty();
         $("#attack-results-player").empty();
 
-        //append the text and damage dealt to the enemy
+        //append the text and damage dealt to the user
         var userAttackStats = $("<div class='w-100'>").text( window.usersCharacter.name + " dealt " + window.usersCharacter.attackPower + " points damage");
         $("#attack-results-player").append(userAttackStats);
 
@@ -533,10 +545,10 @@ $(document).ready(function () {
 
     //make the character's AP increment by its original AP, not by 5
 
-    //make it so that once you choose an enemy, no other enemy can be chosen until the
-    //current enemy is dead
+    //once an enemy is chosen, even before clicking attack button, dont let another enemy
+    //be chosen
 
-
+    //when vader is my character, kylo can still be chosen.
 
     //BONUS
     //Refactor the character selection process with a single function that runs based

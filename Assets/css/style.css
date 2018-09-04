@@ -65,8 +65,12 @@ h2 {
 }
 
 #reset-btn {
-    margin-left: 60px;
+    margin-right: 50%;
     /*margin-right: -30px;*/
+}
+
+#instructions-btn {
+    margin-left: 50%;
 }
 
 .selected-characters {
