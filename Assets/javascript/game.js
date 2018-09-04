@@ -74,6 +74,8 @@ $(document).ready(function () {
     const attackSound = new Audio("../unit-4-game/Assets/audio/saber-hit.wav");
     const winSound = new Audio("../unit-4-game/Assets/audio/winSound.mov");
     const deadSound = new Audio("../unit-4-game/Assets/audio/scream.wav");
+    const startSound = new Audio("../unit-4-game/Assets/audio/start-sound.mov");
+    const loseSound = new Audio("../unit-4-game/Assets/audio/WEEEOOOOWW.mp3")
 
 /*=============================================== RESET & INSTRUCTIONS FUNCTION ====================================*/
 
@@ -96,6 +98,28 @@ $(document).ready(function () {
     })
 
 
+/*========================================== START GAME SECTION ====================================================*/
+
+    $("#start-btn").on("click", function() {
+        startSound.play();
+        $("#start-screen").css("display", "none");
+        $("#main-game").css("display", "block");
+        $("#instructions-btn").css("display", "flex");
+        $("#reset-btn").css("display", "flex");
+    })
+
+    //Starting Instructions function
+    /*$("#start-instructions-btn").on("click", function() {
+        alert(
+            "INSTRUCTIONS:" + "\n"
+            + "STEP 1: Choose your Character to play the game with " + "\n"
+            + "STEP 2: Choose your first Enemy to attack! " + "\n" 
+            + "STEP 3: Attack your first Enemy until their HP runs out " + "\n"
+            + "STEP 4: Choose your next Character, and repeat steps 3 and 4 until no Enemies remain! " + "\n" 
+            + "STEP 5: If you defeat all Enemies before your HP reaches 0, you WIN! " + "\n"
+            + "Once you win, the game will reset automatically after a few seconds"
+        );
+    })*/
 
 
 /*========================================== CHOOSE YOUR CHARACTER =================================================*/
@@ -515,8 +539,10 @@ $(document).ready(function () {
             $("#attack-results-enemy").empty();
             $("#selected-character").empty();
             $("#selected-char-stats").empty();
+            loseSound.play();
             alert("You Lose!");
             window.location.reload(true);
+            
         }
 
         if (window.noEnemyChosen === true) {
